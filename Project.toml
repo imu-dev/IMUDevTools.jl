@@ -1,7 +1,7 @@
 name = "IMUDevTools"
 uuid = "a6ef59df-abd5-46d7-8996-31ff8324aac5"
 authors = ["Marcin Mider <marcin.mider@gmail.com> and contributors"]
-version = "0.1.0"
+version = "0.1.1"
 
 [compat]
 julia = "1.10"

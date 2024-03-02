@@ -10,7 +10,7 @@ struct NotImplExcpt <: Exception
     type::DataType
 end
 
-NotImplExcpt(fn::String, t) = new(fn, typeof(t))
+NotImplExcpt(fn::String, t) = NotImplExcpt(fn, typeof(t))
 function Base.showerror(io::IO, e::NotImplExcpt)
-    return print(io, e.var, "`$(e.fn)` not implemented for $(e.type)")
+    return print(io, "`$(e.fn)` not implemented for $(e.type)")
 end
